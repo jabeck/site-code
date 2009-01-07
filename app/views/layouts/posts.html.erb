@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= controller.controller_name %>: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'main' %>
+</head>
+<div id="banner">
+Banner here.
+</div>
+<div id="link-bar">
+  <%= link_to 'Main Page', :controller => :main, :action => :index %> || 
+  <%= link_to 'About Me', :action => :index %> ||
+  <%= link_to 'Blog', :controller => :posts, :action => :index %> ||
+  <%= link_to 'News', :action => :index %> || 
+  <%= link_to 'Tutorials', :action => :index %>
+</div>
+<body>
+<div id="main">
+<p style="color: white"><%= flash[:notice] %></p>
+
+<%= yield  %>
+</div>
+
+</body>
+</html>

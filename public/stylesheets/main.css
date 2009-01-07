@@ -1,0 +1,55 @@
+body {
+  background: #111;
+}
+
+#banner {
+  background: #555;
+  padding: 1em;
+  height: 3em;
+}
+
+#blog-posts-box {
+  background: #888;
+  width: 25em;
+  margin-left: 15em;
+  padding: 1em;
+}
+
+#link-bar {
+  background: #333; 
+  padding: 1em;
+  color: #fff;
+}
+
+#main {
+	padding: 2em;
+	color: #fff;
+	background: #000; 
+}
+
+#twitter-box {
+  padding: 1em;
+  margin-left: 5em;
+  margin-bottom: 1em;
+  width: 40em;
+  color: #fff;
+  background: #333;
+}
+
+a:active { 
+	color: #fff;
+}
+
+a:link {
+	color: #fff;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:hover { 
+  color: #fff; 
+  background:#777; 
+}
+

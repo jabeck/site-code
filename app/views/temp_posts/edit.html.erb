@@ -1,0 +1,17 @@
+<h1>Editing "<%= @temp.title %>"</h1>
+<% form_for(@temp) do |f| %>
+  <%= f.error_messages %>
+  <%= f.label :title %><br />
+  <%= f.text_field :title %><br /><br />
+  <%= f.label :body %><br />
+  <%= f.text_area :body %>
+
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>
+<%= button_to "Publish Changes", :action => :publish_changes, :id => @temp %>
+<%= button_to 'Revert changes', :action => :revert, :id => @temp, :confirm => 'Warning: This will permanently delete any unpublished changes you have made.' %>
+
+<%= link_to 'Show', @temp %> |
+<%= link_to 'Back', temp_posts_path %>

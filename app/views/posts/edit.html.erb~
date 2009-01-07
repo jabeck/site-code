@@ -1,0 +1,17 @@
+<% form_for(@post) do |f| %>
+  <%= f.error_messages %>
+<h1>Editing <%= @post.title %></h1>
+  
+  <%= f.label :title %><br />
+  <%= f.text_field :title %><br /><br />
+  <%= f.label :body %><br />
+  <%= f.text_area :body %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+<%= button_to "Revert changes", :action => :revert, :id => @post.id %>
+
+<%= link_to 'Show', @post %> |
+<%= link_to 'Back', posts_path %>

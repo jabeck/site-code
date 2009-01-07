@@ -1,0 +1,7 @@
+<h1><%= @post.title %></h1>
+  <%= @post.body %><br /><br />
+  <% if !@post.published %>
+    <%= button_to 'Publish', :action => :publish, :id => @post.id %>
+  <% end %>
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

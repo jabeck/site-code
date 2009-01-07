@@ -1,0 +1,28 @@
+Structure: 
+Main page -- links to everywhere, twitter updates?
+Blog -- posts
+Tutorials -- Rails and Erlang and Ajax
+News -- reddit articles
+About Me -- picture and thingy about me.
+
+To do:
+Posts:
+  Timestamps in nice format
+  Authenticate 
+  Check out will_paginate
+  list most recent
+  random article
+  Should posts be general and cover both tutorials and blog?
+  People shouldn't be able to view changes in posts that are being edited, can only view the original post until the user hits 'publish' again.
+  Make/get a little text editing widget
+
+Tutorials
+News
+About Me
+Sections:
+  when you delete a section, change the associated posts' section to something else
+  
+Site layout: 
+  finish artwork
+  star links, bright/dim
+  constellation links
